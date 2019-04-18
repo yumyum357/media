@@ -1,0 +1,452 @@
+/* 와이드 pc  */
+/*main영역*/
+body{width: 100%;height: 100%}
+.main{width: 100%; position: relative; overflow: hidden}
+
+.main .main1{width: 50%;float: left;background: url(../images/main1.jpg)left center no-repeat;height: 100%;display: block;content: '';background-size: cover}
+.main .main2{width: 50%;float: right;background: url(../images/main2.jpg)center center no-repeat;height: 100%;display: block;content: '';background-size: cover}
+
+.main .btn1{color: #fff;position: absolute;left: 10%;bottom:  13%;border: 1px solid #fff;padding: 3px 13px;font-size: 20px;font-family: 'Hind Siliguri';display: block}
+.main a.btn1:hover{color: #e9743e;border: 1px solid #e9743e}
+.main .btn2{color: #fff;position: absolute;right: 10%;bottom:  13%;border: 1px solid #fff;padding: 3px 13px;font-size: 20px;font-family: 'Hind Siliguri'}
+.main a.btn2:hover{color: #207f61;border: 1px solid #207f61}
+
+.main .box1{width:90%; height: 3px; margin: 0 5%; position: absolute; top:50px; 
+      background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 21%, rgba(255,255,255,0) 79%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 20%,rgba(255,255,255,0) 21%,rgba(255,255,255,0) 79%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 20%,rgba(255,255,255,0) 21%,rgba(255,255,255,0) 79%,rgba(255,255,255,1) 80%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+   }
+.main .box2{ width:90%; height:90%; margin: 0 5%;top:50px; border-left: 3px solid #fff;border-right: 3px solid #fff;border-bottom: 3px solid #fff; position: absolute; box-sizing: border-box  }
+
+.main .down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -90px; bottom: 20%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}	
+
+
+
+/*album영역*/
+#content .btn{display: block; width: 64px; height: 30px; text-align: center; border: 1px solid #999; font-family: "Hind Siliguri"; font-size: 20px;color: #999;padding: 3px 10px}
+#content .album{width: 86%;margin: 130px 7% 0 7%;overflow: hidden}
+#content h2{font-size: 100px;text-align: center;font-weight: lighter;}
+
+#content .album .inWrap {position: relative;}
+#content .album .inWrap ul{}
+#content .album .inWrap ul li {position: relative}
+#content .album .inWrap ul li div{width:  40%;margin:8% 0 8% 15%;float: left}
+#content .album .inWrap ul li img{width: 100%;display: block}
+#content .album dl{width: 30%;float: left;position: absolute;left: 60%;top: 50%;margin-top: -149px}
+#content .album dl dt{font-family: 'Hind Siliguri';font-size: 45px}
+#content .album dl dd{font-size: 25px;line-height: 1.8em}
+.album .swiper-container-horizontal > .swiper-pagination-progress {display: none}
+.album .button div {z-index:20;position: absolute;top: 50%;margin-top: -30px}
+.album .button a {display: block;height: 100%;}
+.album .back a {background: url(../images/back.svg) center center no-repeat;background-size: 60px 60px;text-indent: -999px; overflow: hidden;width: 60px;height: 60px;background-size: 60px 60px;display: block;content: ''}
+.album .next a {background: url(../images/next.svg) center center no-repeat;background-size: 60px 60px;text-indent: -999px; overflow: hidden;width: 60px;height: 60px;display: block;content: ''}
+.album .back {left: 2%;}
+.album .next {right: 2%;}
+
+
+
+/*gallery영역*/
+.gallery{position: relative;margin: 130px 0 650px 0;width: 100%}
+/*.gallery h2{position: relative;left: 50%;top: 70px;margin-left:200px }*/
+
+.gallery .videoBox{position: relative;z-index: -10;opacity:.6 }
+
+
+#videoBG {width:100%;}
+#imgBG{width:100%;display: none}
+
+.gallery .imgBox{width: 86%;margin: 0 7%;position: absolute;left: 0;top:130px; }
+.gallery h2{}
+.gallery .imgCon{;width: 100%;height: 100%;margin-top: 250px}
+.gallery .imgCon>div>div{width: 100%; margin-bottom: 1%; overflow: hidden}
+.gallery .imgCon>div>div:nth-child(2),.gallery .imgCon>div>div:nth-child(3){position: relative}
+.gallery .imgCon>div{overflow: hidden}
+.gallery .imgCon div>div{ float: left}
+.gallery .imgCon>div>div:nth-child(1){width: 20%; margin-right: 1%}
+.gallery .imgCon>div>div:nth-child(2),.gallery .imgCon>div>div:nth-child(3){width: 20%; padding-top: 20%; margin-right: 1%;}
+.gallery .imgCon>div>div:nth-child(4){width: 37%;}
+.gallery .imgCon>div>div img{display: block;width: 100%}
+.gallery .imgCon>div>div:nth-child(2) img, .gallery .imgCon>div>div:nth-child(3) img{position: relative}
+.gallery .imgCon>img{float: left}
+.gallery .imgCon>img:nth-child(2){width: 41%;margin-right: 1%}
+.gallery .imgCon>img:nth-child(3),.gallery .imgCon>img:nth-child(4){width: 20%;margin-right: 1%;}
+.gallery .btn{position: absolute; left: 84%;bottom: 0;}
+
+/*scheduel부분*/
+
+.scheduel{width: 1600px;overflow: hidden;position: relative;height: 1500px;left: 50%;top: 130px;margin-left: -800px; transition: all .7s}
+
+.scheduel h2{margin-bottom: 10%}
+.scheduel .schCon{margin: 0 150px;position: relative}
+.scheduel .schCon div{float: left; overflow: hidden}
+.scheduel div p{position: relative; font-family: 'Gothic A1';font-size: 26px;line-height: 1.5em;}
+
+.scheduel div{position: relative; overflow: hidden}
+.scheduel .schCon>div{overflow: hidden}
+.scheduel div.sch1{margin:50px 50px 0 0}
+.scheduel div.sch2{margin: 0 50px 0 0}
+.scheduel div.sch3{margin: 100px 0 0 0}
+
+
+
+.scheduel .schCon>div dl{position: absolute; top: 0; left: -150%;text-align: right;}
+.scheduel .schCon>div:hover dl{width: 100%; height: 100%; z-index: 2;  background:rgba(0,0,0,.6); left: 0; transition: all .5s;}
+.scheduel div.sch1:hover dl{height: 500px}
+.scheduel div.sch2:hover dl{height:620px}
+.scheduel div.sch3:hover dl{height: 680px}
+.scheduel div.sch1:before{background: url(../images/scheduel_1.jpg)left center no-repeat;width: 400px;height: 500px;content: '';display: block;margin-bottom: 50px}
+.scheduel div.sch2:before{background: url(../images/scheduel_2.jpg)left center no-repeat;width: 400px;height: 620px;content: '';display: block;margin-bottom: 50px}
+.scheduel div.sch3:before{background: url(../images/scheduel_3.jpg)left center no-repeat;width: 400px;height: 680px;content: '';display: block;margin-bottom: 50px}
+
+.scheduel div dt{font-family: 'Gothic A1';font-size: 30px;border-bottom: 1px solid #fff;padding-bottom: 10px;margin-bottom: 10px;color: #fff;margin:50px 50px 20px 0 }
+.scheduel div dd{font-family: 'Gothic A1';font-size:16px;color: #fff;margin-right: 50px;line-height: 2em}
+.scheduel .schBtn {;position: absolute;left: 0;bottom: 0;}
+.scheduel .schBtn .btn{width: 100%;}
+
+
+
+/*instagram부분*/
+
+#content .insta h2{font-size: 60px;margin-bottom: 50px}
+
+
+
+
+
+
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1400px) {
+    #content{width: 100%}
+    .main .box1{background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,0) 16%, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 86%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,0) 16%,rgba(255,255,255,0) 85%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 15%,rgba(255,255,255,0) 16%,rgba(255,255,255,0) 85%,rgba(255,255,255,1) 86%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */}
+    
+    #content h2{font-size: 95px}
+    
+    #content .album{margin: 130px 7% -50px 7%;width: }
+    
+    #content .gallery .imgBox{width: 100%;margin: 0 auto;top: 50px}
+    .gallery .imgCon{margin-top: 180px}
+
+    #content .scheduel{width: 100%;position:relative;left: 50%;top: 0;margin-left: -50%}
+    .scheduel .schCon{margin: 0 0% 0 -630px;position: relative;left: 50%;top: 0}
+    .scheduel div.sch1{margin:50px 30px 0 0}
+    .scheduel div.sch2{margin: 0 30px 0 0}
+    .scheduel div.sch2:before{background: url(../images/scheduel_2.jpg)left center no-repeat;width: 400px;height: 621px;content: '';display: block;margin-bottom: 50px}
+    
+    
+    #content .insta{margin-top: -200px}
+
+    
+}
+
+@media screen and (max-width:1280px) {
+    #headerArea .gnb{width:600px; position: absolute;left: 50%;top: 15%;margin-left:-300px }
+    #headerArea .gnb li{margin-right: 70px}
+    #headerArea .gnb ul li a{font-size: 25px}
+    .main .box{background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 11%, rgba(255,255,255,0) 89%, rgba(255,255,255,1) 90%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,0) 11%,rgba(255,255,255,0) 89%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 10%,rgba(255,255,255,0) 11%,rgba(255,255,255,0) 89%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */}
+    
+    .gallery .imgBox {top: 50px}
+    .gallery .imgCon{margin-top: 270px}
+    .gallery .imgCon div>div:nth-child(1){display: none}
+    .gallery .imgCon>div>div:nth-child(2),.gallery .imgCon>div>div:nth-child(3){width: 24%; padding: 30% 0 0 0; margin-right: 1%;}
+    .gallery .imgCon>div>div:nth-child(4){width: 50%;}
+    .gallery .imgCon>img{float: right}
+    .gallery .imgCon>img:nth-child(2){width: 50%;margin:0 0 0 1%}
+    .gallery .imgCon>img:nth-child(3){width: 24%;margin:0 0 0 1%}
+    .gallery .imgCon>img:nth-child(4){width: 24%;margin: 0}
+    .gallery .imgCon .btn{left: 2%;top: 49%;bottom: initial}
+    
+
+    #content .scheduel{width: 100%;position:relative;left: 50%;top: 200px;margin-left: -50%}
+    .scheduel .schCon{margin: -50px 0 0 -480px;position: relative;left: 50%;top: 0;padding-top: 90px}
+    .scheduel div.sch1{margin:0  30px 0 0}
+    .scheduel div.sch2{margin: 0 30px 0 0}
+    .scheduel div.sch3{margin: 0 0 0 0}
+    .scheduel .schCon p{font-size: 22px}
+    .scheduel div.sch1:before{background: url(../images/scheduel_1_2.jpg)left center no-repeat;width: 300px;height: 450px;content: '';display: block;margin-bottom:40px}
+    .scheduel div.sch2:before{background: url(../images/scheduel_2_2.jpg)left center no-repeat;width: 300px;height: 451px;content: '';display: block;margin-bottom: 40px}
+    .scheduel div.sch3:before{background: url(../images/scheduel_3_2.jpg)left center no-repeat;width: 300px;height: 450px;content: '';display: block;margin-bottom: 40px}
+    
+    .scheduel div.sch1:hover dl{height: 450px}
+    .scheduel div.sch2:hover dl{height:450px}
+    .scheduel div.sch3:hover dl{height: 450px}
+    .scheduel div dt{font-size: 24px;padding-bottom: 10px;margin-bottom: 10px;margin:50px 30px 20px 0 }
+    .scheduel div dd{;font-size:14px;margin-right: 30px;}
+    .scheduel .schBtn {position: relative;left:-100px;top: -90px;}
+    
+    #content .insta{margin-top: -300px}
+    .insta li {float: left; width:300px;height: 300px ;	margin-bottom: 2em; list-style: none}
+
+	
+}
+
+@media screen and (max-width:1160px) {
+    #content h2{font-size: 86px}
+    
+    #content .album dl{margin-top: -130px}
+    #content .album dl dt{font-size: 40px}
+    #content .album dl dd{font-size: 23px;}
+    
+    .gallery{margin-bottom: 600px}
+    
+    .scheduel .schCon {padding-top: 70px}
+    .scheduel .schBtn {position: relative;left:-100px;top: -70px;}
+    
+    #content .insta{margin-top: -350px}
+}
+
+@media screen and (max-width:1070px) {
+    #content .album dl{margin-top: -125px}
+    #content .album dl dd{font-size: 20px;}
+    
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    
+    
+    #headerArea .gnb{width:480px; position: absolute;left: 50%;top: 15%;margin-left:-240px }
+    #headerArea .gnb ul li{margin-right: 30px}
+    
+    #content h2{font-size: 80px}
+    #content .album{margin-top: 100px}
+    
+    .scheduel .schBtn {position: relative;left:-100px;top: -60px;}
+    
+    #content .insta{margin-top: -380px}
+}
+
+@media screen and (max-width:980px) {
+
+    .scheduel .schCon{margin: -70px 0 0 -310px;position: relative;left: 50%;top: 0;padding-bottom: 60px}
+    .scheduel div.sch1{display: none}
+    .scheduel div.sch2{margin: 0 20px 0 0}
+    .scheduel .schCon p{text-align: center}
+    .scheduel div.sch2 p:before{margin-bottom:20px}
+    .scheduel div.sch3 p:before{margin-bottom: 20px}
+    .scheduel div.sch2:hover dl{display: none}
+    .scheduel div.sch3:hover dl{display: none}
+    
+    #content .insta{margin-top: -480px}
+
+    
+    
+}
+
+@media screen and (max-width:932px) {
+    #content .album dl{margin-top: -115px}
+    #content .album dl dt{font-size: 35px}
+    #content .album dl dd{font-size: 16px;line-height: 2em}
+}
+
+@media screen and (max-width:900px) {
+    
+    #content h2{font-size: 70px}
+    
+    #headerArea .gnb{width:480px; position: absolute;left: 50%;top: 15%;margin-left:-205px }
+    #headerArea .gnb ul li{margin-right: 30px}
+    #headerArea .gnb ul li a{font-size: 23px;}
+    
+    .gallery{margin-bottom: 510px}
+    .gallery .imgCon{margin-top: 360px;position: relative}
+    .gallery .imgCon>div>div:nth-child(2),.gallery .imgCon>div>div:nth-child(3){padding: 25% 0 0 0;}
+    .gallery .imgCon>img{float: left}
+    .gallery .imgCon>img:nth-child(2){display: none}
+    .gallery .imgCon>img:nth-child(3){width: 24%;margin:0 1% 0 0;position: absolute;left: 0;top: 0%}
+    .gallery .imgCon>img:nth-child(4){width: 24%;margin: 0;position: absolute;left: 25%;top: 0%}
+    .gallery .imgCon .btn{left: 39%;top: 91%;bottom: initial}
+    
+    #content .scheduel{width: 100%;position:relative;left: 50%;top: 150px;margin-left: -50%}
+
+    
+    #content .insta{margin-top: -480px}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #headerArea .logo{position: absolute;left: 50%;top:60%;margin-left:-259px }
+    #headerArea h1.logo a{font-size: 85px;}
+/*    #headerArea .menuOpen{ display:block}*/
+    #headerArea .menuOpen{background: url(../images/menu.png)right center no-repeat;width:60px;height: 60px ;text-indent: -999px;display: block}
+    
+    #headerArea .gnb{width:100%; height: 100%; display:none;position:fixed; top: 30px;  left:0;margin-left: 0}
+    #headerArea .gnb ul{position: fixed;top: 25%; width: 100%; height: auto}
+    #headerArea .gnb li{ float:none; margin:0; text-align:center;line-height: 2.5em ;font-size: 40px;}
+    #headerArea .gnb ul li{margin-right: 0}
+    
+    #headerArea .gnb ul li a{font-size: 40px;color: #333;display: block;position: relative}
+    #headerArea .gnb ul li a:after{display:block;transition: all .4s ease-in-out;width: 2px;height: 2px;background: #fff;content: '' ;position: absolute;left: 50%;bottom: 0;margin-left: -1px;}
+    
+    #headerArea .gnb ul li a:hover{color: #ebb516;font-weight: bold;border-bottom: none;}
+     #headerArea .gnb ul li a:hover:after{;transform: scaleX(120);display: block;background: #ebb516}
+    
+    #headerArea .gnb .close{position: absolute;left: 50%;margin-left: -30px;display: block}
+   
+    
+    .box{z-index: 30;width: 100%;height: 100%;background: #fff;;position: fixed;left: 0;top: 0;display:none}
+    
+    #content h2{font-size: 60px}
+    
+    #content .album{margin-top: 80px}
+    #content .album dl{margin-top: -105px}
+    #content .album dl dt{font-size: 30px}
+    #content .album dl dd{font-size: 14px;line-height: 2em}
+    .album .button div{width: 40px;height: 40px;}
+	.album .button div a {background-size: 40px 40px;}
+    
+    .gallery{margin:100px 0 510px 0}
+    .gallery .imgCon{margin-top: 100px;position: relative}
+    .gallery .imgCon>div>div:nth-child(2){padding: 25% 0 0 0;width: 45%; margin: 24% 2% 0 4%;}
+    .gallery .imgCon>div>div:nth-child(3){padding: 25% 0 0 0;width: 45%; margin: 24% 4% 0 0;}
+    .gallery .imgCon>div>div:nth-child(4){display: none}
+    .gallery .imgCon>img:nth-child(3){width: 45%;margin:0 2% 0 4%;position: absolute;left: 0;top: 0%}
+    .gallery .imgCon>img:nth-child(4){width: 45%;margin: 0;position: absolute;left: 51%;top: 0%}
+    .gallery .imgCon .btn{left: 45%;top: 106%;bottom: initial;padding: 5px 15px}
+    
+     #content .scheduel{width: 100%;position:relative;left: 50%;top: 200px;margin-left: -50%}
+    
+    #content .insta{margin-top: -480px}
+    #content .insta h2{font-size: 42px;margin-bottom: 50px}
+}
+	
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #headerArea .logo{position: absolute;left: 8%;top:30px;font-size: 20px;margin: 0 }
+    #headerArea h1.logo a{font-size: 50px; }
+    #headerArea .menuOpen{ display:block;position: absolute;left:88%;top: 30px}
+    #headerArea nav.gnb{width:100%; display:none;position:absolute; top:30px; right:0;left: unset;margin-left: 0}
+    #headerArea nav.gnb ul{}
+    #headerArea .gnb li{ float:none; margin:0; text-align:center }
+    #headerArea .gnb ul li a{font-size: 40px;color: #ebb516;font-weight: bold}
+    #headerArea .gnb ul li a:hover{color: #ebb516;font-weight: bold;border-bottom: none;}
+    #headerArea .gnb .close{position: fixed;left: initial;right: 10% ;margin-left: 0;top: 5%; display: block;}
+    #headerArea .gnb .close img{width:40px;height: 40px;background-size: 40px 40px}
+
+    .main .main1{float: none;width: 100%;height: 50%; position: relative}
+    .main .main2{float: none;width: 100%;height: 50%;position: relative}
+    .main .box1{display: none}
+    .main .box2{display: none}
+    .main a.down{display: none}
+    .main .btn1{bottom:  55%;left: 13%;padding: 7px 25px;font-size: 30px;font-weight: bold}
+    .main .btn2{bottom:  7%;padding: 7px 25px;font-size: 30px;font-weight: bold;right: 13%}
+    
+    #content h2{font-size: 50px;}
+    
+    #content .album{margin-top: 50px}
+    #content .album .inWrap ul li div{width:  60%;margin:10% 20% 20% 19%;}
+    #content .album .inWrap ul li img{width: 100%;display: block;border-radius: 30px}
+    #content .album dl{display:none;}
+	.album .button div a {background-size: 30px 30px;width: 30px;height: 30px}
+    
+    
+    .gallery {    margin: 30px 0 430px 0;}
+    .gallery .imgCon .btn{left: 43%;}
+
+    .scheduel .schCon{margin: -90px 0 0 -150px;position: relative;left: 50%;top: 0;padding-bottom: 40px}
+    
+    .scheduel .schCon div{float: none}
+    .scheduel div.sch2{margin: 0 20px 0 0}
+    .scheduel .schCon p{display: none}
+    .scheduel .schBtn {position: absolute;left: 15%;top:unset;bottom: 0px }
+    
+    #content .insta{margin-top: -70px}
+
+    
+    
+    
+	
+}
+
+@media screen and (max-width:600px) {
+    .main .btn1{bottom:  55%;left: 13%;padding: 5px 20px;font-size: 25px;font-weight: bold}
+    .main .btn2{bottom:  7%;padding: 5px 20px;font-size: 25px;font-weight: bold;right: 13%}
+    
+    #content h2{font-size: 40px;font-weight:300}
+    
+
+    #content .insta h2{font-size: 30px;margin-bottom: 30px}
+    
+    #footerArea{height: 200px}
+    #footerArea h2{font-size: 24px;margin-bottom: 20px;font-weight: 200;}
+}
+
+
+@media screen and (max-width:520px) {
+    #headerArea .logo{position: absolute;left: 8%;top:30px;margin: 0 }
+    #headerArea h1.logo a{font-size: 40px; }
+    #headerArea .menuOpen{background: url(../images/menu.png)right center no-repeat;width:40px;height: 60px ;text-indent: -999px;display: block;background-size: 40px 40px}
+    .main .btn1{font-weight: normal;}
+    .main .btn2{font-weight: normal;}
+    
+    .scheduel .schBtn {left: 17%;}
+	
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+    min-width:360px
+    #headerArea .logo{position: absolute;left: 8%;top:35px;margin: 0 }
+    #headerArea h1.logo a{font-size: 30px; }
+    .main .btn1{padding: 3px 13px;font-size: 20px}
+    .main .btn2{padding: 3px 13px;font-size: 20px;}
+	#wrap { min-width:320px; }
+    
+    #headerArea .gnb ul li a{font-size: 30px;color: #ebb516;font-weight: bold}
+    #headerArea .gnb li {line-height: 2em}
+     #content .album .inWrap ul li img{width: calc(100% - 16px);display: block;border-radius: 50%;border: 8px solid #f9cc55}
+    
+     .gallery .imgCon .btn{left: 41%;}
+    
+   
+    
+     #content .scheduel{width: 100%;position:relative;left: 50%;top: 100px;margin-left: -50%}
+    .scheduel .schBtn {left: 19%;}
+    
+    #content .insta{margin-top: -230px}
+   
+    #footerArea{height: 150px}
+    #footerArea h2{font-size: 20px;}
+}
+
+@media screen and (min-width : 321px)  and (orientation : landscape) and (max-width:768px){
+    
+    #headerArea .gnb ul{width: 80%; margin: 0 10%}
+    #headerArea .gnb ul li {width: 50%; margin: 0; float: left;}
+    #headerArea .gnb ul li a{font-size: .75em;color: #ebb516;font-weight: bold;border-bottom: none;}
+    #headerArea .gnb ul li a:hover{border-bottom: none;}
+    #headerArea .gnb .close img{width:40px;height: 40px;background-size: 40px 40px}
+    
+    
+}
+
+
+@media screen and (min-width : 640px)  and (orientation : landscape) and (max-width:767px){
+    #headerArea .logo{margin-left: -198px }
+    #headerArea h1.logo a{font-size: 65px; }
+    
+    #headerArea .menuOpen{width:40px;height: 60px ;background-size: 40px 40px}
+}
+
+@media screen and (max-width:320px) {
+    
+    #headerArea .gnb li {line-height:1.5em}
+}

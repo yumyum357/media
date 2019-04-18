@@ -1,0 +1,55 @@
+#headerArea{position: absolute;width: 100%;height: 250px;z-index: 30}
+#headerArea .logo{position: absolute;left: 10%;top:10%;margin: 0}
+#headerArea .logo a{font-size: 80px;color: #27a27b;font-family:'Hind Siliguri' }
+
+#headerArea .menuOpen{position: absolute;left: 50%;top: 30px;margin-left: -30px;display: none}
+
+#headerArea .gnb{width:710px; position: absolute;left:initial;top: 25%;right: 10%; margin-left:0 }
+#headerArea .gnb li{float: left;margin-right:80px;}
+#headerArea .gnb ul li:last-child{margin-right: 0}
+#headerArea .gnb ul li a{color: #333;display: block;font-size: 30px;font-weight: lighter;font-family: 'Hind Siliguri'}
+#headerArea .gnb ul li a:hover{;border-bottom: 3px solid #ebb516}
+#headerArea .gnb .close{display: none}
+
+
+
+/*-------------------------------------------------------------------*/
+#content{width: 80%;margin:20% 10% 10% 10%}
+
+.grid-image-item,.grid--images .grid-sizer { width: 20%;}
+.grid-image-item {
+  float: left; margin-bottom: 10px
+}
+
+.grid-image-item img{
+    border-radius: 3%;
+  display: block;
+    width: 96%;margin: 10px auto;
+}
+.grid-image-item h4{
+  display: block;
+    width: 96%;text-align: center;margin: 0 auto;
+}
+.grid-image-item p{
+  display: block;
+  width: 96%;text-align: center;margin: 0 auto;
+}
+
+/*-------------------------------------------------------------------*/
+
+@media screen and (max-width:1024px) {
+    
+  .grid-image-item,
+.grid--images .grid-sizer { width: 25%;}
+
+}
+
+@media screen and (max-width:767px) {
+     .grid-image-item,
+.grid--images .grid-sizer {width: 33.33%;}
+}
+
+@media screen and (max-width:480px){
+    .grid-image-item,
+.grid--images .grid-sizer {width: 50%;}
+}
